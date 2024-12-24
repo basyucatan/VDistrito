@@ -1,0 +1,39 @@
+[27-Oct-2024 09:44:10 America/Mexico_City] PHP Parse error:  syntax error, unexpected token "=" in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php on line 2
+[27-Oct-2024 09:48:55 America/Mexico_City] PHP Warning:  Undefined array key "name" in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php on line 17
+[27-Oct-2024 09:48:55 America/Mexico_City] PHP Warning:  Undefined array key "email" in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php on line 18
+[27-Oct-2024 09:48:55 America/Mexico_City] PHP Warning:  Undefined array key "telefono" in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php on line 19
+[27-Oct-2024 09:48:55 America/Mexico_City] PHP Warning:  Undefined array key "message" in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php on line 20
+[27-Oct-2024 09:48:55 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'mayanfar_contactos.contacto' doesn't exist in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php:24
+Stack trace:
+#0 /home2/mayanfar/climassarlat.com/public/guardar_contacto.php(24): mysqli->prepare('INSERT INTO con...')
+#1 {main}
+  thrown in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php on line 24
+[27-Oct-2024 09:48:58 America/Mexico_City] PHP Warning:  Undefined array key "name" in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php on line 17
+[27-Oct-2024 09:48:58 America/Mexico_City] PHP Warning:  Undefined array key "email" in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php on line 18
+[27-Oct-2024 09:48:58 America/Mexico_City] PHP Warning:  Undefined array key "telefono" in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php on line 19
+[27-Oct-2024 09:48:58 America/Mexico_City] PHP Warning:  Undefined array key "message" in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php on line 20
+[27-Oct-2024 09:48:58 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'mayanfar_contactos.contacto' doesn't exist in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php:24
+Stack trace:
+#0 /home2/mayanfar/climassarlat.com/public/guardar_contacto.php(24): mysqli->prepare('INSERT INTO con...')
+#1 {main}
+  thrown in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php on line 24
+[27-Oct-2024 09:49:20 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'mayanfar_contactos.contacto' doesn't exist in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php:24
+Stack trace:
+#0 /home2/mayanfar/climassarlat.com/public/guardar_contacto.php(24): mysqli->prepare('INSERT INTO con...')
+#1 {main}
+  thrown in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php on line 24
+[27-Oct-2024 14:30:51 America/Mexico_City] PHP Fatal error:  Uncaught ArgumentCountError: The number of variables must match the number of parameters in the prepared statement in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php:25
+Stack trace:
+#0 /home2/mayanfar/climassarlat.com/public/guardar_contacto.php(25): mysqli_stmt->bind_param('ssss', 'bas', 'abasd@asdfsa.co...', '999', 'asdfafa')
+#1 {main}
+  thrown in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php on line 25
+[27-Oct-2024 14:30:57 America/Mexico_City] PHP Fatal error:  Uncaught ArgumentCountError: The number of variables must match the number of parameters in the prepared statement in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php:25
+Stack trace:
+#0 /home2/mayanfar/climassarlat.com/public/guardar_contacto.php(25): mysqli_stmt->bind_param('ssss', 'bas', 'abasd@asdfsa.co...', '999', 'asdfafa')
+#1 {main}
+  thrown in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php on line 25
+[27-Oct-2024 14:31:12 America/Mexico_City] PHP Fatal error:  Uncaught ArgumentCountError: The number of variables must match the number of parameters in the prepared statement in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php:25
+Stack trace:
+#0 /home2/mayanfar/climassarlat.com/public/guardar_contacto.php(25): mysqli_stmt->bind_param('ssss', 'asdfasf', 'asdfa@aasdf.com', '999', 'asdfasdfsa')
+#1 {main}
+  thrown in /home2/mayanfar/climassarlat.com/public/guardar_contacto.php on line 25

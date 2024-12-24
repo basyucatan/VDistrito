@@ -1,0 +1,238 @@
+:root {
+  /* Colores principales */
+  --colPrimario: #00386f; /* Azul oscuro */
+  --colSecundario: #34495E; /* Gris azulado oscuro */
+  --colAcento: #ff1e00; /* Rojo coral */
+  --colTexto: #ECF0F1; /* Gris claro */
+  --colFondo: #BDC3C7; /* Gris suave */
+  
+  /* Colores de bot車n */
+  --colBoton: #2980B9; /* Azul brillante */
+  --colHoverBoton: #1F618D; /* Azul m芍s oscuro */
+  
+  /* Colores adicionales */
+  --colBlanco: #FFFFFF; /* Blanco puro */
+  --colGris: #7F8C8D; /* Gris medio */
+}
+
+/* Custom styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--colFondo);
+  color: var(--colTexto);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--colAcento);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--colPrimario);
+}
+
+.navbar-nav .nav-link {
+  color: var(--colGris);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--colAcento);
+}
+
+/* Estilos para la sección de inicio */
+#inicio {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0; /* Espacio superior e inferior */
+  margin-top: 30px; /* Asegúrate de que esto coincida con la altura de tu navbar */
+}
+
+#inicio .container {
+  background: rgba(0, 0, 0, 0.1); /* Fondo semi-transparente para el texto */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#inicio h1 {
+    color: var(--colAcento);
+  font-size: 3rem; /* Tamaño del título */
+  text-shadow: 
+    -1px -2px 0 #ffffff,  
+     1px -2px 0 #ffffff,
+    -1px  2px 0 #ffffff,
+     1px  2px 0 #ffffff; /* Sombra para simular un borde */
+}
+
+
+#inicio p {
+  color: white; /* Color del texto del párrafo */
+  text-shadow: 
+    -1px -2px 0 #000,  
+     1px -2px 0 #000,
+    -1px  2px 0 #000,
+     1px  2px 0 #000; /* Sombra para simular un borde */  
+  font-size: 1.7rem; /* Tamaño del título */
+}
+
+
+/* Secci車n de inicio */
+.primario {
+    padding: 10px;
+  background-color: var(--colPrimario);
+}
+.secundario {
+  background-color: var(--colSecundario);
+}
+/* Animaci車n de entrada para secciones */
+.animar {
+  padding: 50px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s forwards;
+}
+/* Efecto al pasar el cursor */
+.animar:hover {
+  opacity: 1; /* Aumenta la opacidad al pasar el cursor */
+  transform: scale(1.05);
+}
+/* Efecto hover en tarjetas de productos */
+.row img {
+  transition: transform 0.3s ease;
+}
+
+.row img:hover {
+  transform: scale(1.05);
+}
+
+/* Bot車n con efecto hover */
+.btn-primary {
+  background-color: var(--colBoton);
+  border: none;
+  color: var(--colBlanco);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--colHoverBoton);
+  transform: translateY(-2px);
+}
+
+/* Estilos para t赤tulos */
+h2 {
+  color: var(--colTexto);
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: var(--colBoton);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  animation: slideIn 0.5s forwards;
+}
+
+/* Estilo de mapa */
+.embed-responsive {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--colSecundario);
+}
+
+/* Secci車n de contacto */
+#contacto {
+  background-color: var(--colFondo);
+}
+    .flotante {
+        position: fixed;
+        top: 40px;
+        right: 20px;
+        z-index: 1000;
+        background-color: transparent;
+        padding: 10px;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    } 
+/* Animaciones */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+  }
+}
+
+.carousel-item {
+  position: relative;
+  text-align: center;
+  height: 100vh; /* Ocupa toda la altura de la ventana en escritorio */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+/* Ajustes generales para las imágenes */
+.carousel-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+  cursor: zoom-in;
+  margin: auto;
+  display: block; /* Asegura que la imagen esté centrada */
+}
+
+/* Estilos específicos para móviles */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 60vh; /* Reduce la altura del carrusel en móviles */
+  }
+
+  .carousel-img {
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+    object-fit: contain;
+  }
+}
+
+/* Estilos para pantallas grandes (escritorio) */
+@media (min-width: 769px) {
+  .carousel-item {
+    height: 70vh; /* Ocupa el 70% de la altura de la ventana en escritorio */
+  }
+
+  .carousel-img {
+    width: auto;
+    height: 100%;
+    object-fit: contain; /* Asegura que la imagen mantenga su proporción */
+  }
+}
+
+/* Controles del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
